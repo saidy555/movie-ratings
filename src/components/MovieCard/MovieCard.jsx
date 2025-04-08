@@ -7,10 +7,15 @@ export default function MovieCard({ movie }) {
         <button>Overlay</button>
       </div>
       <div>
-        Movie poster
-        <img src="" alt="" />
+        <img
+          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          alt={movie.title}
+        />
       </div>
-      <div>Movie details</div>
+      <div>
+        <h3>{movie.title}</h3>
+        <p>{movie.release_date}</p>
+      </div>
     </div>
   );
 }
