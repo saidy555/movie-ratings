@@ -1,10 +1,22 @@
 import styles from "./MovieCard.module.css";
+import { MovieContext } from "../../contexts/MovieProvider";
+import { useContext } from "react";
 
 export default function MovieCard({ movie }) {
+  const { isFavorite, addToFavorites, removeFromFavorites } =
+    useContext(MovieContext);
+  const favorite = isFavorite(movie.id);
+
+  function onFavoriteClick(e) {
+    e.preventDefault();
+    if (favorite) removeFromFavorites(movie.id);
+    else addToFavorites(movie);
+  }
+
   return (
     <div>
       <div>
-        <button>Overlay</button>
+        <button onClick={onFavoriteClick}>♥</button>
       </div>
       <div>
         <img
