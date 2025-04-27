@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 import SearchPage from "./pages/SearchPage/SearchPage";
-import { MovieProvider } from "./contexts/MovieProvider";
+import MovieProvider from "./contexts/MovieProvider";
 
 function App() {
   // theme state and useeffect
@@ -48,11 +48,13 @@ function App() {
         setSearchQuery={setSearchQuery}
         handleSearch={handleSearch}
       />
-      <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="favorites" element={<FavoritesPage />} />
-        <Route path="search/:searchTerm" element={<SearchPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="favorites" element={<FavoritesPage />} />
+          <Route path="search/:searchTerm" element={<SearchPage />} />
+        </Routes>
+      </main>
       <Footer />
     </MovieProvider>
   );

@@ -1,12 +1,9 @@
+import { useMovieContext } from "../../contexts/MovieProvider";
 import styles from "./MovieCard.module.css";
-import { MovieContext } from "../../contexts/MovieProvider";
-import { useContext } from "react";
 
 export default function MovieCard({ movie }) {
-  const { isFavorite, addToFavorites, removeFromFavorites } =
-    useContext(MovieContext);
+  const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext();
   const favorite = isFavorite(movie.id);
-
   function onFavoriteClick(e) {
     e.preventDefault();
     if (favorite) removeFromFavorites(movie.id);
