@@ -1,7 +1,10 @@
-.grid{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    
-    gap: 1em;
+.grid {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  gap: 1em;
+}
+.title {
+  padding-left: 5rem;
 }

@@ -29,6 +29,6 @@ export default function HomePage() {
   } else if (error != null) {
     return <div>{error}</div>;
   } else {
-    return <MovieGrid movies={movies} />;
+    return <MovieGrid movies={movies} title={"Popular Movies"} />;
   }
 }

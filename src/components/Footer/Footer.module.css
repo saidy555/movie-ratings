@@ -1,0 +1,82 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--secondary);
+  text-align: center;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials_app {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.socials {
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: 700;
+  border: 2px solid var(--grey);
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials p {
+  margin: 0;
+}
+.icons {
+  display: flex;
+  gap: 1em;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+.icon:hover {
+  background-color: var(--grey);
+  border-radius: 10px;
+}
+.app {
+  width: 50%;
+  border: 2px solid var(--grey);
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app_line1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+.app_line2 {
+  text-align: left;
+  font-size: 1.3em;
+  margin: 0;
+}
+.qr {
+  width: 80px;
+}
+
+.company {
+  font-style: italic;
+  font-weight: 700;
+}
+.copyright {
+  display: block;
+  font-size: 0.8em;
+  color: var(--grey);
+}

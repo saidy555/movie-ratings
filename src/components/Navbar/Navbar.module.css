@@ -4,8 +4,10 @@
   background-color: var(--background);
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em;
-  border-bottom: 2px solid var(--accent);
+  padding: 0.5em 3em;
+  border-bottom: 2px solid var(--secondary);
+  transition: all 0.3s, color 0.3s;
+  margin-bottom: 2rem;
 }
 #search_bar {
   width: 25%;
@@ -20,7 +22,8 @@
   background-color: inherit;
   border: none;
   outline: none;
-  color: var(--text);
+  color: var(--white);
+  font-size: 1em;
 }
 #search_bar input::placeholder {
   color: var(--revsecondary);
@@ -31,8 +34,11 @@
 }
 
 .logo {
-  width: 80px;
-  height: 56px;
+  font-size: 2em;
+  color: var(--secondary);
+}
+.logo:hover {
+  color: var(--accent);
 }
 
 .pages {
@@ -45,19 +51,25 @@
   align-items: center;
 }
 .pages a {
-  color: var(--revsecondary);
+  color: var(--secondary);
 }
 .pages a:hover {
   color: var(--accent);
 }
 
 #darkmode_bttn {
-  font-size: 1.5em;
+  cursor: pointer;
   background-color: inherit;
-  border: none;
-  border-radius: 100%;
+  border: 1px solid var(--border);
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
 }
 
 #darkmode_bttn:hover {
-  box-shadow: 0 5px 15px var(--text);
+  border: 1px solid var(--text);
 }
