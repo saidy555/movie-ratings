@@ -1,4 +1,4 @@
-import { tmdbKey } from "../../keys.js";
+const tmdbKey = "8d671bffee96a860f867e56186c485a5";
 
 const BASE_URL = "https://api.themoviedb.org/3";
 
